@@ -1,0 +1,532 @@
+{
+  "license": "CC0 (Poly Haven & ambientCG)",
+  "notes": {
+    "units": "meters, Y-up (glTF). `facing` = direction the front/seat of the model points to in its own space (null = no clear front).",
+    "models": "GLBs use EXT_meshopt_compression + KHR_mesh_quantization + EXT_texture_webp (drei useGLTF enables the meshopt decoder by default).",
+    "maps": "color = sRGB; normal = OpenGL (+Y) tangent-space; arm = packed R:AO G:roughness B:metalness (use for aoMap, roughnessMap and metalnessMap); rough = grayscale roughness.",
+    "realSizeMeters": "real-world size of one texture tile [u, v] -> repeat = surfaceSize / realSizeMeters."
+  },
+  "models": [
+    {
+      "short": "armchair",
+      "source": "Poly Haven",
+      "sourceId": "modern_arm_chair_01",
+      "name": "Modern Arm Chair 01",
+      "file": "/assets/models/armchair.glb",
+      "bytes": 108860,
+      "bbox": {
+        "min": [
+          -0.407,
+          0,
+          -0.575
+        ],
+        "max": [
+          0.414,
+          1.023,
+          0.411
+        ]
+      },
+      "size": [
+        0.82,
+        1.023,
+        0.987
+      ],
+      "facing": "+Z",
+      "triangles": 7029,
+      "materials": [
+        "modern_arm_chair_01_legs",
+        "modern_arm_chair_01_pillow"
+      ],
+      "textureCount": 4,
+      "textures": [
+        "image/webp 512x512",
+        "image/webp 512x512",
+        "image/webp 512x512",
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "modern_arm_chair_01_legs: normal map dropped",
+        "modern_arm_chair_01_pillow: normal map dropped"
+      ]
+    },
+    {
+      "short": "coffee_table",
+      "source": "Poly Haven",
+      "sourceId": "modern_coffee_table_01",
+      "name": "Modern Coffee Table 01",
+      "file": "/assets/models/coffee_table.glb",
+      "bytes": 66108,
+      "bbox": {
+        "min": [
+          -0.3,
+          0,
+          -0.601
+        ],
+        "max": [
+          0.3,
+          0.39,
+          0.601
+        ]
+      },
+      "size": [
+        0.6,
+        0.39,
+        1.202
+      ],
+      "facing": null,
+      "triangles": 3832,
+      "materials": [
+        "modern_coffee_table_01"
+      ],
+      "textureCount": 2,
+      "textures": [
+        "image/webp 512x512",
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "modern_coffee_table_01: normal map dropped"
+      ]
+    },
+    {
+      "short": "dining_chair",
+      "source": "Poly Haven",
+      "sourceId": "dining_chair_02",
+      "name": "Dining Chair 02",
+      "file": "/assets/models/dining_chair.glb",
+      "bytes": 149868,
+      "bbox": {
+        "min": [
+          -0.217,
+          0.001,
+          -0.331
+        ],
+        "max": [
+          0.217,
+          0.975,
+          0.245
+        ]
+      },
+      "size": [
+        0.434,
+        0.973,
+        0.576
+      ],
+      "facing": "+Z",
+      "triangles": 17011,
+      "materials": [
+        "dining_chair_02"
+      ],
+      "textureCount": 2,
+      "textures": [
+        "image/webp 512x512",
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "dining_chair_02: normal map dropped"
+      ]
+    },
+    {
+      "short": "floor_plant",
+      "source": "Poly Haven",
+      "sourceId": "potted_plant_02",
+      "name": "Potted Plant 02",
+      "file": "/assets/models/floor_plant.glb",
+      "bytes": 381828,
+      "bbox": {
+        "min": [
+          -0.396,
+          0,
+          -0.42
+        ],
+        "max": [
+          0.304,
+          0.841,
+          0.237
+        ]
+      },
+      "size": [
+        0.701,
+        0.841,
+        0.657
+      ],
+      "facing": null,
+      "triangles": 40973,
+      "materials": [
+        "potted_plant_02_pot",
+        "potted_plant_02_leaves"
+      ],
+      "textureCount": 2,
+      "textures": [
+        "image/webp 512x512",
+        "image/webp 512x512"
+      ],
+      "simplified": true,
+      "strippedMaps": [
+        "potted_plant_02_pot: normal map dropped",
+        "potted_plant_02_pot: ORM -> roughness 0.767, metallic 0",
+        "potted_plant_02_leaves: normal map dropped",
+        "potted_plant_02_leaves: ORM -> roughness 0.401, metallic 0"
+      ]
+    },
+    {
+      "short": "vase",
+      "source": "Poly Haven",
+      "sourceId": "ceramic_vase_01",
+      "name": "Ceramic Vase 01",
+      "file": "/assets/models/vase.glb",
+      "bytes": 69756,
+      "bbox": {
+        "min": [
+          -0.102,
+          0.001,
+          -0.102
+        ],
+        "max": [
+          0.102,
+          0.401,
+          0.102
+        ]
+      },
+      "size": [
+        0.204,
+        0.4,
+        0.204
+      ],
+      "facing": null,
+      "triangles": 9784,
+      "materials": [
+        "ceramic_vase_01"
+      ],
+      "textureCount": 1,
+      "textures": [
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "ceramic_vase_01: normal map dropped",
+        "ceramic_vase_01: ORM -> roughness 0.148, metallic 0"
+      ]
+    },
+    {
+      "short": "bar_chair",
+      "source": "Poly Haven",
+      "sourceId": "bar_chair_round_01",
+      "name": "Bar Chair Round 01",
+      "file": "/assets/models/bar_chair.glb",
+      "bytes": 319784,
+      "bbox": {
+        "min": [
+          -0.229,
+          0,
+          -0.244
+        ],
+        "max": [
+          0.254,
+          0.751,
+          0.242
+        ]
+      },
+      "size": [
+        0.483,
+        0.751,
+        0.486
+      ],
+      "facing": "+Z",
+      "triangles": 14373,
+      "materials": [
+        "Bar Chair"
+      ],
+      "textureCount": 1,
+      "textures": [
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "Bar Chair: normal map dropped",
+        "Bar Chair: ORM -> roughness 0.621, metallic 0"
+      ]
+    },
+    {
+      "short": "tv_unit",
+      "source": "Poly Haven",
+      "sourceId": "modern_wooden_cabinet",
+      "name": "Modern Wooden Cabinet",
+      "file": "/assets/models/tv_unit.glb",
+      "bytes": 291504,
+      "bbox": {
+        "min": [
+          -1.22,
+          0,
+          -0.27
+        ],
+        "max": [
+          1.22,
+          0.68,
+          0.25
+        ]
+      },
+      "size": [
+        2.44,
+        0.68,
+        0.52
+      ],
+      "facing": "+Z",
+      "triangles": 19869,
+      "materials": [
+        "modern_wooden_cabinet"
+      ],
+      "textureCount": 2,
+      "textures": [
+        "image/webp 512x512",
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "modern_wooden_cabinet: normal map dropped"
+      ]
+    },
+    {
+      "short": "plant",
+      "source": "Poly Haven",
+      "sourceId": "potted_plant_04",
+      "name": "Potted Plant 04",
+      "file": "/assets/models/plant.glb",
+      "bytes": 103948,
+      "bbox": {
+        "min": [
+          -0.084,
+          0,
+          -0.084
+        ],
+        "max": [
+          0.084,
+          0.268,
+          0.101
+        ]
+      },
+      "size": [
+        0.168,
+        0.267,
+        0.185
+      ],
+      "facing": null,
+      "triangles": 8697,
+      "materials": [
+        "potted_plant_04"
+      ],
+      "textureCount": 1,
+      "textures": [
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "potted_plant_04: normal map dropped",
+        "potted_plant_04: ORM -> roughness 0.436, metallic 0"
+      ]
+    },
+    {
+      "short": "ceiling_lamp",
+      "source": "Poly Haven",
+      "sourceId": "modern_ceiling_lamp_01",
+      "name": "Modern Ceiling Lamp 01",
+      "file": "/assets/models/ceiling_lamp.glb",
+      "bytes": 54260,
+      "bbox": {
+        "min": [
+          -0.216,
+          0.221,
+          -0.214
+        ],
+        "max": [
+          0.216,
+          1.173,
+          0.217
+        ]
+      },
+      "size": [
+        0.432,
+        0.952,
+        0.432
+      ],
+      "facing": null,
+      "triangles": 5462,
+      "materials": [
+        "modern_ceiling_lamp_01_glass",
+        "modern_ceiling_lamp_01",
+        "modern_ceiling_globe"
+      ],
+      "textureCount": 1,
+      "textures": [
+        "image/webp 512x512"
+      ],
+      "simplified": false,
+      "strippedMaps": [
+        "modern_ceiling_lamp_01_glass: normal map dropped",
+        "modern_ceiling_lamp_01_glass: ORM -> roughness 0.258, metallic 0",
+        "modern_ceiling_lamp_01: normal map dropped",
+        "modern_ceiling_lamp_01: ORM -> roughness 0.391, metallic 1",
+        "modern_ceiling_globe: normal map dropped",
+        "modern_ceiling_globe: ORM -> roughness 0.094, metallic 0"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "short": "floor_laminate",
+      "source": "Poly Haven",
+      "sourceId": "laminate_floor_02",
+      "name": "Laminate Floor 02",
+      "realSizeMeters": [
+        1.7,
+        1.7
+      ],
+      "size": 1024,
+      "dir": "/assets/textures/floor_laminate/",
+      "maps": [
+        "color",
+        "normal",
+        "arm"
+      ],
+      "swatch": "/assets/swatches/floor_laminate.webp"
+    },
+    {
+      "short": "floor_oak",
+      "source": "Poly Haven",
+      "sourceId": "wood_floor",
+      "name": "Wood Floor",
+      "realSizeMeters": [
+        1.7,
+        1.7
+      ],
+      "size": 1024,
+      "dir": "/assets/textures/floor_oak/",
+      "maps": [
+        "color",
+        "normal",
+        "arm"
+      ],
+      "swatch": "/assets/swatches/floor_oak.webp"
+    },
+    {
+      "short": "floor_herringbone",
+      "source": "Poly Haven",
+      "sourceId": "herringbone_parquet",
+      "name": "Herringbone Parquet",
+      "realSizeMeters": [
+        3.4,
+        3.4
+      ],
+      "size": 1024,
+      "dir": "/assets/textures/floor_herringbone/",
+      "maps": [
+        "color",
+        "normal",
+        "arm"
+      ],
+      "swatch": "/assets/swatches/floor_herringbone.webp"
+    },
+    {
+      "short": "oak_veneer",
+      "source": "Poly Haven",
+      "sourceId": "white_oak_veneer",
+      "name": "White Oak Veneer",
+      "realSizeMeters": [
+        0.5,
+        0.5
+      ],
+      "size": 1024,
+      "dir": "/assets/textures/oak_veneer/",
+      "maps": [
+        "color",
+        "normal"
+      ],
+      "swatch": "/assets/swatches/oak_veneer.webp"
+    },
+    {
+      "short": "plaster",
+      "source": "Poly Haven",
+      "sourceId": "plaster_grey_04",
+      "name": "Plaster Grey 04",
+      "realSizeMeters": [
+        1.5,
+        1.5
+      ],
+      "size": 512,
+      "dir": "/assets/textures/plaster/",
+      "maps": [
+        "color",
+        "normal"
+      ],
+      "swatch": "/assets/swatches/plaster.webp",
+      "processing": "color re-centred to rgb(214,209,200) with contrast x0.65"
+    },
+    {
+      "short": "rug",
+      "source": "Poly Haven",
+      "sourceId": "poly_wool_herringbone",
+      "name": "Poly Wool Herringbone",
+      "realSizeMeters": [
+        0.27,
+        0.276
+      ],
+      "size": 512,
+      "dir": "/assets/textures/rug/",
+      "maps": [
+        "color",
+        "normal"
+      ],
+      "swatch": "/assets/swatches/rug.webp"
+    },
+    {
+      "short": "marble",
+      "source": "ambientCG",
+      "sourceId": "Marble021",
+      "name": "Marble021",
+      "realSizeMeters": [
+        2,
+        2
+      ],
+      "realSizeEstimated": true,
+      "size": 1024,
+      "dir": "/assets/textures/marble/",
+      "maps": [
+        "color",
+        "rough"
+      ],
+      "swatch": "/assets/swatches/marble.webp",
+      "processing": "veins darkened (gain 2.2, threshold 0.055)"
+    },
+    {
+      "short": "granite",
+      "source": "ambientCG",
+      "sourceId": "Marble016",
+      "name": "Marble016",
+      "realSizeMeters": [
+        2,
+        2
+      ],
+      "realSizeEstimated": true,
+      "size": 1024,
+      "dir": "/assets/textures/granite/",
+      "maps": [
+        "color",
+        "rough"
+      ],
+      "swatch": "/assets/swatches/granite.webp"
+    }
+  ],
+  "env": {
+    "source": "Poly Haven",
+    "sourceId": "buikslotermeerplein",
+    "day": "/assets/env/day.webp",
+    "evening": "/assets/env/evening.webp",
+    "width": 2048,
+    "height": 1024,
+    "projection": "equirectangular",
+    "bestView": "+Z",
+    "orientation": "With backgroundRotation 0 the towers + lawn (and the evening afterglow) are seen looking toward +Z; -Z/+X show a graffiti skate area. To put the towers behind a window whose outward direction is (dx, dz), set scene.backgroundRotation.y = Math.atan2(dx, dz) (e.g. window facing -Z -> Math.PI, +X -> Math.PI / 2)."
+  }
+}
